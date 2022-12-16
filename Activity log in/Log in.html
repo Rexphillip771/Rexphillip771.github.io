@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+</head>
+<body>
+    <center>
+<h1 style="text-align: center;">Login</h1>
+    <form name="RegForm" onsubmit="return sample()" method="post">
+        <p>Username: <input type="text" size="40" name="Name" placeholder="Enter Username"></p>
+        <p>Email Address: <input type="text" size="35" name="EMail" placeholder="Enter email add" ></p>
+        <p>Password: <input type="password" size="40" name="Password" placeholder="****"></p>
+        <p>
+            <input type="submit" value="login" name="Submit">
+            <input type="reset" value="Clear" name="clear">
+            Not yet signed up? <a href="Register.html">Register</a>
+        </p>
+    </form>
+</center>
+<script>
+        function sample(){
+            var name = document.forms.RegForm.Name.value;
+            var email = document.forms.RegForm.EMail.value;
+            var password = document.forms.RegForm.Password.value;
+
+            var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+            var regName = /\d+$/g;
+
+        if(name == "" || regName.test(name)){
+                window.alert("Please enter your name properly.");
+                name.focus();
+                return false;
+            }
+        if(email == "" || !regEmail.test(email)){
+                window.alert("Please enter a valid e-mail address");
+                email.focus();
+                return false;
+            }
+        if(password == ""){
+                alert("Please enter your password");
+                password.focus();
+                return false;
+            }
+        if(password.length < 6){
+                alert("Password should be atleast 6 characters long");
+                password.focus();
+                return false;
+            }
+        window.location.replace("Flex.html");
+
+            return false;
+        }
+</script>
+
+
+
+</body>
+</html>

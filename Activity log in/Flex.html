@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="Flex.css">
+</head>
+<body>
+    <header>
+        <h1 id="nav-title">INC.</h1>   
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="full-img" id="fullImgBox">
+            <img src="beautiful-aerial-shot-forest-enveloped-creepy-mist-fog.jpg" id="fullImg">
+            <span onclick="closeFullImg()">☓</span>
+          </div>
+    </header>
+    <div clas="container">
+        <img src="beautiful-aerial-shot-forest-enveloped-creepy-mist-fog.jpg" onclick="openFullImg(this.src)">
+        <img src="beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky.jpg" onclick="openFullImg(this.src)">
+        <img src="beautiful-scenery-green-valley-near-alp-mountains-austria-cloudy-sky.jpg" onclick="openFullImg(this.src)">
+        <img src="birch-forest-sunny-afternoon-while-autumn-season.jpg" onclick="openFullImg(this.src)">
+        <img src="breathtaking-scenery-sunset-clouds-reflecting-jaunay-lake-france.jpg" onclick="openFullImg(this.src)">
+        <img src="breathtaking-shot-beautiful-stones-turquoise-water-lake-hills-background.jpg" onclick="openFullImg(this.src)"
+    </div>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+</script>
+</div>
+</body>
+</html>

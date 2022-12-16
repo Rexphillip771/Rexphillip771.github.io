@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combo</title>
+</head>
+<body>
+    <script>
+        function combinator (s) {
+        list_of_strings = new Array();
+        for(i=0;i<s.length;i++) {
+        for(j=i+1;j<s.length+1;j++) {
+           list_of_strings.push(s.slice(i, j));
+       }
+   }
+   return list_of_strings;
+}
+
+document.write(combinator("cat"));
+    </script>
+</body>
+</html>

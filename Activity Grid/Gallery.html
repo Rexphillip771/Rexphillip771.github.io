@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href ="Edit.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body>
+      <h1>Scenery Gallery</h1>
+      <div class="full-img" id="fullImgBox">
+        <img src="images/beautiful-aerial-shot-forest-enveloped-creepy-mist-fog.jpg" id="fullImg">
+        <span onclick="closeFullImg()">☓</span>
+      </div>
+      <div class="img-gallery">
+        <img src="images/beautiful-aerial-shot-forest-enveloped-creepy-mist-fog.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/beautiful-scenery-green-valley-near-alp-mountains-austria-cloudy-sky.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/birch-forest-sunny-afternoon-while-autumn-season.jpg"onclick="openFullImg(this.src)">
+        <img src="Images/breathtaking-scenery-sunset-clouds-reflecting-jaunay-lake-france.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/breathtaking-shot-beautiful-stones-turquoise-water-lake-hills-background.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/breathtaking-view-snowy-mountains-cloudy-sky-patagonia-chile.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/foggy-mountainous-scenery-gloomy-sky.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/indonesia-nusa-penida-natural-views-ocean.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/panoramic-view-roys-peak-new-zealand-with-low-mountains-distance-cloudscape.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-james-wheeler-417074.jpg" onclick="openFullImg(this.src)"> 
+        <img src="Images/pexels-julius-silver-870711.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-pixabay-371589.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-tobi-620337.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/reflection-rocky-mountains-sky-beautiful-lake.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/vestrahorn-mountains-stokksnes-iceland.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-prakash-aryal-38326.jpg" onclick="openFullImg(this.src)">
+        <img src="images/pexels-zukiman-mohamad-21787.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-chait-goli-1796727.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-pixabay-161097.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-nextvoyage-490411.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-public-domain-pictures-68147.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-geoffrey-werner-627924.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-eberhard-grossgasteiger-456710.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-pixabay-459225.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-kai-pilger-547494.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-krivec-ales-552784.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-alex-757240.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-arnie-chou-927414.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-eberhard-grossgasteiger-534164.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-pixabay-415958.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-jayson-delos-santos-1139541.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-baskin-creative-studios-1766838.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-denis-linine-714256.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-eberhard-grossgasteiger-1064162.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-eberhard-grossgasteiger-454880.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-andré-cook-131723.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-nextvoyage-730662.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-h-emre-2776479.jpg" onclick="openFullImg(this.src)">
+        <img src="Images/pexels-felix-mittermeier-957039.jpg" onclick="openFullImg(this.src)">
+
+      </div>
+      <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+</script>
+    
+    
+</body>
+</html>
